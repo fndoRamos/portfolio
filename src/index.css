@@ -40,9 +40,114 @@
   border-radius: 100%;
 }
 
+.avatar-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-box::before {
+  position: absolute;
+  content: '';
+  inset: -10px 140px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+
+.avatar-box:hover::before {
+  inset: -20px 0px;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: rotate(0deg)
+  }
+  100%
+  {
+    transform: rotate(360deg)
+  }
+
+}
+
+.avatar-box::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background-color: #162052;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.avatar-content {
+  position: absolute;
+  inset: 30px;
+  border: 6px solid #070a1c;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar-content img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.avatar-box:hover .avatar-content img {
+  opacity: 0;
+}
+
+.avatar-content h2 {
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.avatar-content h2 span {
+  font-weight: 300;
+  font-size: 0.75em;
+}
+
+/* .avatar-content a {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #070a1c;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: 0.5s;
+} */
+
+/* .avatar-content Link:hover {
+  letter-spacing: 0.2em
+} */
+
 @layer base {
   body {
-    @apply font-secondary text-lg leading-8 text-white;
+    @apply text-lg leading-8 text-white font-secondary;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
@@ -51,7 +156,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply font-medium text-white rounded-full font-primary;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
@@ -66,6 +171,6 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply flex items-center py-8 lg:py-24 lg:h-screen;
   }
 }
