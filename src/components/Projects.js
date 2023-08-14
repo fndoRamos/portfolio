@@ -4,12 +4,15 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 //images
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img1 from "../assets/dive-book-project-preview.png";
+import Img2 from "../assets/rootseeker-project-preview.png";
+import Img3 from "../assets/spacescape-project-preview.png";
 import JsLogo from "../assets/javascript.png"
 import ReactLogo from "../assets/react.png"
 import NodeJsLogo from "../assets/nodeJS.png"
+// icons
+import { FaReact } from "react-icons/fa"
+import { SiTailwindcss, SiDaisyui, SiJavascript } from "react-icons/si"
 
 const Projects = () => {
   return (
@@ -33,7 +36,6 @@ const Projects = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut est
                 error a veritatis fugiat ipsa dicta et vel deserunt.
               </p>
-              <button className="btn btn-sm">View all projects</button>
             </div>
             {/* project1 */}
             <div className="relative overflow-hidden border-2 group border-white/50 rounded-xl">
@@ -65,7 +67,7 @@ const Projects = () => {
             {/* project2 */}
             <div className="relative overflow-hidden border-2 group border-white/50 rounded-xl">
               {/* overlay */}
-              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/70"></div>
+              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/90"></div>
               {/* img */}
               <img
                 className="transition-all duration-500 group-hover:scale-125"
@@ -77,15 +79,19 @@ const Projects = () => {
                 <span className="text-gradient">Project title</span>
               </div>
               {/* title */}
-              <div className="absolute z-50 flex transition-all duration-700 -bottom-full left-12 group-hover:bottom-14">
+              <div className="absolute z-50 flex justify-between items-center transition-all duration-700 bg-black/20 h-[40px] -bottom-full left-10 
+              group-hover:bottom-14 rounded-full">
                 <span className="mx-2">
-                  <img className="w-auto h-8 rounded-full" src={JsLogo} alt="javascript" />
+                  <SiJavascript />
                 </span>
                 <span className="mx-2">
-                <img className="w-auto h-8 rounded-full" src={ReactLogo} alt="react" />
+                <FaReact />
                 </span>
                 <span className="mx-2">
-                <img className="w-auto h-8 rounded-full" src={NodeJsLogo} alt="nodejs" />
+                <SiTailwindcss />
+                </span>
+                <span className="mx-2">
+                <SiDaisyui />
                 </span>
               </div>
             </div>
