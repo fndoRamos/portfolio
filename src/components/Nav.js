@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <nav className="fixed z-50 w-full overflow-hidden bottom-2 lg:bottom-8">
+    <nav className="fixed z-50 w-full overflow-hidden bottom-2 lg:bottom-5">
       <div className="container mx-auto">
         <div
           className="w-full bg-black/70 h-[96px] backdrop-blur-2x1 rounded-full 

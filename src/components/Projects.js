@@ -7,6 +7,9 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/portfolio-img1.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
+import JsLogo from "../assets/javascript.png"
+import ReactLogo from "../assets/react.png"
+import NodeJsLogo from "../assets/nodeJS.png"
 
 const Projects = () => {
   return (
@@ -71,11 +74,19 @@ const Projects = () => {
               />
               {/* pretitle */}
               <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-24">
-                <span className="text-gradient">WEB DEV</span>
+                <span className="text-gradient">Project title</span>
               </div>
               {/* title */}
-              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-14">
-                <span className="text-3xl text-white">Project title</span>
+              <div className="absolute z-50 flex transition-all duration-700 -bottom-full left-12 group-hover:bottom-14">
+                <span className="mx-2">
+                  <img className="w-auto h-8 rounded-full" src={JsLogo} alt="javascript" />
+                </span>
+                <span className="mx-2">
+                <img className="w-auto h-8 rounded-full" src={ReactLogo} alt="react" />
+                </span>
+                <span className="mx-2">
+                <img className="w-auto h-8 rounded-full" src={NodeJsLogo} alt="nodejs" />
+                </span>
               </div>
             </div>
             {/* project3 */}
