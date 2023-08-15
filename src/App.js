@@ -15,7 +15,6 @@ const App = () => {
       <Banner />
       <Nav />
       <About />
-      <Services />
       <Projects />
       <Contact />
       {/* <div className='h-[4000px]'></div> */}
