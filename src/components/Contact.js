@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Contact = () => {
-  let msg = "";
   const ref = useRef();
   const [succcess, setSuccess] = useState(null);
 

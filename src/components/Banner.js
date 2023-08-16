@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
+
 const Banner = () => {
   return (
     <section
@@ -60,10 +61,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a href="https://linkedin.com/in/fernando-ramos-webdev" target="_blank" rel="noreferrer noopener">
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a href="https://github.com/fndoRamos" target="_blank" rel="noreferrer noopener">
                 <FaGithub />
               </a>
             </motion.div>

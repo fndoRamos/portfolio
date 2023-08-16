@@ -4,7 +4,6 @@ import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
-import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 

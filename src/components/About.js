@@ -1,6 +1,4 @@
 import React from "react";
-// countup
-import CountUp from "react-countup";
 // Intersection observer hook
 import { useInView } from "react-intersection-observer";
 // motion
@@ -66,13 +64,13 @@ const About = () => {
           >
             Tech stack.
           </motion.h2>
-          <div className="flex items-center justify-between my-10">
+          <div className="flex flex-wrap items-center justify-between my-10">
             <motion.img
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="JavaScript"
               src={JavascriptIcon}
               alt="JavaScript"
@@ -82,7 +80,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="React"
               src={ReactIcon}
               alt="ReactIcon"
@@ -92,7 +90,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="HTML"
               src={HtmlIcon}
               alt="HtmlIcon"
@@ -102,7 +100,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="CSS"
               src={CssIcon}
               alt="CssIcon"
@@ -112,7 +110,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="MongoDB"
               src={MongoDBIcon}
               alt="MongoDBIcon"
@@ -122,7 +120,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="Express"
               src={ExpressIcon}
               alt="ExpressIcon"
@@ -132,7 +130,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="NodeJS"
               src={NodeJSIcon}
               alt="NodeJSIcon"
@@ -142,7 +140,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="Tailwind"
               src={TailwindIcon}
               alt="TailwindIcon"
@@ -152,7 +150,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="w-auto mx-4 h-14 animate-bounce"
+              className="w-auto mx-4 my-4 h-14 animate-bounce"
               title="Git"
               src={GitIcon}
               alt="GitIcon"
