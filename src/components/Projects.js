@@ -17,6 +17,8 @@ import TailwindIcon from "../assets/icons-tech-stack/tailwind-icon.png";
 import GitIcon from "../assets/icons-tech-stack/git-icon.png";
 import ExpressIcon from "../assets/icons-tech-stack/express-icon.png";
 import DaisyuiIcon from "../assets/icons-tech-stack/daisyui-icon.png";
+import HandlebarsIcon from "../assets/icons-tech-stack/handlebars-icon.png";
+import BootstrapIcon from "../assets/icons-tech-stack/bootstrap-icon.png";
 
 const Projects = () => {
   return (
@@ -51,13 +53,57 @@ const Projects = () => {
                 src={Img1}
                 alt="project1"
               />
-              {/* pretitle */}
-              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-24">
-                <span className="text-gradient">WEB DEV</span>
-              </div>
               {/* title */}
-              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-14">
-                <span className="text-3xl text-white">Project title</span>
+              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-56">
+                <span className="text-2xl text-gradient">DiveBook</span>
+              </div>
+              {/* description */}
+              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-48">
+                <span className="secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+              </div>
+              {/* tech stack */}
+              <div
+                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
+              group-hover:bottom-6 rounded-full"
+              >
+                <img
+                  src={JavascriptIcon}
+                  alt="JavaScript"
+                  className="w-auto h-8 mx-4"
+                  title="JavaScript"
+                />
+                <img
+                  src={MongoDBIcon}
+                  alt="MongoDB"
+                  className="w-auto h-8 mx-4"
+                  title="MongoDB"
+                />
+                <img
+                  src={NodeJSIcon}
+                  alt="NodeJS"
+                  className="w-auto h-8 mx-4"
+                  title="NodeJS"
+                />
+                <img
+                  src={ExpressIcon}
+                  alt="Express"
+                  className="w-auto h-8 mx-4"
+                  title="Express"
+                />
+                <img
+                  src={HandlebarsIcon}
+                  alt="Tailwind"
+                  className="w-auto h-8 mx-4"
+                  title="Handlebars"
+                />
+                <img
+                  src={BootstrapIcon}
+                  alt="DaisyUI"
+                  className="w-auto h-8 mx-4"
+                  title="Bootstrap"
+                />
               </div>
             </div>
           </motion.div>
@@ -80,22 +126,61 @@ const Projects = () => {
               />
               {/* title */}
               <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-56">
-                <span className="text-2xl text-gradient">Project title</span>
+                <span className="text-2xl text-gradient">RootSeeker</span>
               </div>
               {/* description */}
               <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-48">
-                <span className="secondary">Lorem, ipsum dolor sit amet consectetur</span>
+                <span className="secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
               </div>
               {/* tech stack */}
-              <div className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
-              group-hover:bottom-6 rounded-full">
-                <img src={JavascriptIcon} alt="JavaScript" className="w-auto h-8 mx-4" title="JavaScript" />
-                <img src={ReactIcon} alt="React" className="w-auto h-8 mx-4" title="React" />
-                <img src={MongoDBIcon} alt="MongoDB" className="w-auto h-8 mx-4" title="MongoDB" />
-                <img src={NodeJSIcon} alt="NodeJS" className="w-auto h-8 mx-4" title="NodeJS" />
-                <img src={ExpressIcon} alt="Express" className="w-auto h-8 mx-4" title="Express" />
-                <img src={TailwindIcon} alt="Tailwind" className="w-auto h-8 mx-4" title="Tailwind" />
-                <img src={DaisyuiIcon} alt="DaisyUI" className="w-auto h-8 mx-4" title="DaisyUI" />
+              <div
+                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
+              group-hover:bottom-6 rounded-full"
+              >
+                <img
+                  src={JavascriptIcon}
+                  alt="JavaScript"
+                  className="w-auto h-8 mx-4"
+                  title="JavaScript"
+                />
+                <img
+                  src={ReactIcon}
+                  alt="React"
+                  className="w-auto h-8 mx-4"
+                  title="React"
+                />
+                <img
+                  src={MongoDBIcon}
+                  alt="MongoDB"
+                  className="w-auto h-8 mx-4"
+                  title="MongoDB"
+                />
+                <img
+                  src={NodeJSIcon}
+                  alt="NodeJS"
+                  className="w-auto h-8 mx-4"
+                  title="NodeJS"
+                />
+                <img
+                  src={ExpressIcon}
+                  alt="Express"
+                  className="w-auto h-8 mx-4"
+                  title="Express"
+                />
+                <img
+                  src={TailwindIcon}
+                  alt="Tailwind"
+                  className="w-auto h-8 mx-4"
+                  title="Tailwind"
+                />
+                <img
+                  src={DaisyuiIcon}
+                  alt="DaisyUI"
+                  className="w-auto h-8 mx-4"
+                  title="DaisyUI"
+                />
               </div>
             </div>
             {/* project3 */}
@@ -108,13 +193,39 @@ const Projects = () => {
                 src={Img3}
                 alt="project1"
               />
-              {/* pretitle */}
-              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-24">
-                <span className="text-gradient">WEB DEV</span>
-              </div>
               {/* title */}
-              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-14">
-                <span className="text-3xl text-white">Project title</span>
+              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-56">
+                <span className="text-2xl text-gradient">SpaceScape</span>
+              </div>
+              {/* description */}
+              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-48">
+                <span className="secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+              </div>
+              {/* tech stack */}
+              <div
+                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
+              group-hover:bottom-6 rounded-full"
+              >
+                <img
+                  src={JavascriptIcon}
+                  alt="JavaScript"
+                  className="w-auto h-8 mx-4"
+                  title="JavaScript"
+                />
+                <img
+                  src={HtmlIcon}
+                  alt="React"
+                  className="w-auto h-8 mx-4"
+                  title="HTML"
+                />
+                <img
+                  src={CssIcon}
+                  alt="MongoDB"
+                  className="w-auto h-8 mx-4"
+                  title="CSS"
+                />
               </div>
             </div>
           </motion.div>
