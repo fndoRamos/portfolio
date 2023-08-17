@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-scroll";
 // image
-import Image from "../assets/image-avatar.jpg";
+import profileImage from "../assets/image-avatar.jpg";
 // icons
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 // animation
 import { TypeAnimation } from "react-type-animation";
 // motion
 import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
-
 
 const Banner = () => {
   return (
@@ -66,12 +66,28 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="https://linkedin.com/in/fernando-ramos-webdev" target="_blank" rel="noreferrer noopener">
-                <FaLinkedin />
-              </a>
-              <a href="https://github.com/fndoRamos" target="_blank" rel="noreferrer noopener">
-                <FaGithub />
-              </a>
+              <div className="avatar-box">
+                <div className="avatar-content">
+                <a
+                  href="https://linkedin.com/in/fernando-ramos-webdev"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <FaLinkedin />
+                </a>
+                </div>
+              </div>
+              <div className="avatar-box">
+                <div className="avatar-content">
+                <a
+                  href="https://github.com/fndoRamos"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <BsGithub />
+                </a>
+                </div>
+              </div>
             </motion.div>
           </div>
           {/* image */}
@@ -79,23 +95,10 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="avatar-box hidden lg:flex flex-1 max-w-[400px]"
+            className="hidden lg:flex flex-1 max-w-[400px]"
           >
-            <div className="avatar-content">
-              <img src={Image} alt="Fernando Ramos" />
-              <h2>
-                Fernando Ramos
-                <br /> <span>Full-Stack Developer</span>
-              </h2>
-              <Link
-                to="contact"
-                activeClass="active"
-                smooth={true}
-                spy={true}
-                className="p-1 my-8 cursor-pointer btn tbn-sm"
-              >
-                Contact me!
-              </Link>
+            <div className="">
+              
             </div>
           </motion.div>
         </div>
