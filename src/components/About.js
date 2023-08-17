@@ -3,9 +3,9 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 // motion
 import { motion } from "framer-motion";
-//variant
+// variant
 import { fadeIn } from "../variants";
-//icons
+// images
 import JavascriptIcon from "../assets/icons-tech-stack/javascript-icon.png";
 import HtmlIcon from "../assets/icons-tech-stack/html-icon.png";
 import CssIcon from "../assets/icons-tech-stack/css-icon.png";
@@ -64,7 +64,7 @@ const About = () => {
           >
             Tech stack.
           </motion.h2>
-          <div className="flex flex-wrap items-center justify-between my-10">
+          <div className="flex flex-wrap items-center justify-between mt-10 mb-0">
             <motion.img
               variants={fadeIn("down", 0.6)}
               initial="hidden"
@@ -156,6 +156,12 @@ const About = () => {
               alt="GitIcon"
             />
           </div>
+          <motion.hr
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+          />
         </div>
       </div>
     </section>

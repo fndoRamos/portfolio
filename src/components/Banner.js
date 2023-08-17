@@ -1,10 +1,15 @@
 import React from "react";
-import Image from "../assets/image-avatar.jpg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
+// image
+import Image from "../assets/image-avatar.jpg";
+// icons
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+// animation
+import { TypeAnimation } from "react-type-animation";
+// motion
+import { motion } from "framer-motion";
+// variant
+import { fadeIn } from "../variants";
 
 
 const Banner = () => {
