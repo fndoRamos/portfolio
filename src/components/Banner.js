@@ -12,17 +12,17 @@ import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
 // kute
-import KUTE from "kute.js"
+import KUTE from "kute.js";
 
 const Banner = () => {
-  useEffect(() => {
-    KUTE.fromTo(
-      "#blob1",
-      { path: "#blob1" },
-      { path: "#blob2" },
-      { repeat: Infinity, duration: 3000, yoyo: true }
-    ).start();
-  })
+  // useEffect(() => {
+  //   KUTE.fromTo(
+  //     "#blob1",
+  //     { path: "#blob1" },
+  //     { path: "#blob2" },
+  //     { repeat: Infinity, duration: 6000, yoyo: true }
+  //   ).start();
+  // });
   return (
     <section
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -76,8 +76,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <div className="avatar-box">
-                <div className="avatar-content">
+              <div className="icon-box">
+                <div className="icon-content">
                   <a
                     href="https://linkedin.com/in/fernando-ramos-webdev"
                     target="_blank"
@@ -87,8 +87,8 @@ const Banner = () => {
                   </a>
                 </div>
               </div>
-              <div className="avatar-box">
-                <div className="avatar-content">
+              <div className="icon-box">
+                <div className="icon-content">
                   <a
                     href="https://github.com/fndoRamos"
                     target="_blank"
@@ -105,30 +105,35 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="hidden lg:flex flex-1 max-w-[400px]"
+            className="hidden lg:flex flex-1 justify-center max-w-[400px]"
           >
-            <svg
+            <div className="h-[570px] w-[380px] flex justify-center items-center">
+            <img src={profileImage} alt="Fernando Ramos" className="h-[500px] w-[auto] blob" />
+            </div>
+            {/* <svg
               id="visual"
-              viewBox="0 0 900 600"
+              viewBox="0 0 900 900"
               width="900"
-              height="600"
+              height="900"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               version="1.1"
             >
-              <g transform="translate(438.6595315915146 323.65384530369823)">
-                <path id="blob1"
-                  d="M145.2 -142.4C195.2 -95.2 247.6 -47.6 241.5 -6.1C235.4 35.4 170.7 70.7 120.7 106.5C70.7 142.4 35.4 178.7 -8.4 187.1C-52.1 195.4 -104.2 175.8 -146.5 140C-188.8 104.2 -221.4 52.1 -219.2 2.2C-216.9 -47.6 -179.9 -95.2 -137.6 -142.4C-95.2 -189.6 -47.6 -236.3 0 -236.3C47.6 -236.3 95.2 -189.6 145.2 -142.4"
+              <g transform="translate(500.39323758081855 318.60239032528267)">
+                <path
+                  id="blob1"
+                  d="M347.9 -253.1C412.7 -196.1 400.8 -53.7 378.9 104.1C357 261.9 324.9 435 212.6 518.9C100.2 602.7 -92.4 597.3 -228.3 515.9C-364.2 434.4 -443.4 276.8 -478.2 112.5C-513.1 -51.8 -503.6 -222.9 -416.5 -285C-329.4 -347.1 -164.7 -300.1 -11.6 -290.9C141.5 -281.6 283 -310.1 347.9 -253.1"
                   fill="#BB004B"
                 ></path>
               </g>
-              <g transform="translate(485.6055898393938 299.6117870528524)" style={{visibility: "hidden"}}>
-                <path id="blob2"
-                  d="M158.4 -153.9C188 -128.7 183 -64.3 185.8 2.8C188.7 70 199.3 140 169.7 165C140 190 70 170 10 160C-50 150 -99.9 149.9 -149.9 124.9C-199.9 99.9 -250 50 -259.5 -9.5C-269.1 -69.1 -238.1 -138.1 -188.1 -163.3C-138.1 -188.5 -69.1 -169.7 -2.4 -167.4C64.3 -165 128.7 -179 158.4 -153.9"
+              <g transform="translate(467.18672497063585 438.9885256735413)" style={{visibility: "hidden"}}>
+                <path
+                  id="blob2"
+                  d="M327 -247.1C387.6 -184.7 375.6 -50.9 333.3 52.7C291 156.2 218.4 229.5 122.2 289.5C26 349.6 -93.7 396.4 -159.1 355.4C-224.6 314.3 -235.7 185.3 -288.1 41.3C-340.4 -102.7 -434.1 -261.8 -393 -319.7C-351.8 -377.6 -175.9 -334.3 -21.4 -317.2C133.2 -300.2 266.3 -309.4 327 -247.1"
                   fill="#BB004B"
                 ></path>
               </g>
-            </svg>
+            </svg> */}
           </motion.div>
         </div>
       </div>
