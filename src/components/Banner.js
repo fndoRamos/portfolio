@@ -76,7 +76,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <div className="icon-box">
+              <div className="icon-box w-[35px] h-[35px]">
                 <div className="icon-content">
                   <a
                     href="https://linkedin.com/in/fernando-ramos-webdev"
@@ -87,7 +87,7 @@ const Banner = () => {
                   </a>
                 </div>
               </div>
-              <div className="icon-box">
+              <div className="icon-box w-[35px] h-[35px]">
                 <div className="icon-content">
                   <a
                     href="https://github.com/fndoRamos"

@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
-//images
+// images
 import Img1 from "../assets/dive-book-project-preview.png";
 import Img2 from "../assets/rootseeker-project-preview.png";
 import Img3 from "../assets/spacescape-project-preview.png";
@@ -14,11 +14,13 @@ import ReactIcon from "../assets/icons-tech-stack/react-icon.png";
 import MongoDBIcon from "../assets/icons-tech-stack/mongodb-icon.png";
 import NodeJSIcon from "../assets/icons-tech-stack/nodejs-icon.png";
 import TailwindIcon from "../assets/icons-tech-stack/tailwind-icon.png";
-import GitIcon from "../assets/icons-tech-stack/git-icon.png";
 import ExpressIcon from "../assets/icons-tech-stack/express-icon.png";
 import DaisyuiIcon from "../assets/icons-tech-stack/daisyui-icon.png";
 import HandlebarsIcon from "../assets/icons-tech-stack/handlebars-icon.png";
 import BootstrapIcon from "../assets/icons-tech-stack/bootstrap-icon.png";
+// icon
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
   return (
@@ -54,19 +56,50 @@ const Projects = () => {
                 alt="project1"
               />
               {/* title */}
-              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-56">
-                <span className="text-2xl text-gradient">DiveBook</span>
+              <div
+                className="absolute z-50 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+              group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]"
+              >
+                <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
+                  DiveBook
+                </span>
+                <div className="flex items-center">
+                  <div className="mx-2 my-1 icon-box w-[35px] h-[35px]">
+                    <div className="icon-content">
+                      <a
+                        href="https://divebook.adaptable.app/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FiExternalLink />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="mx-2 my-1 icon-box w-[35px] h-[35px]">
+                    <div className="icon-content">
+                      <a
+                        href="https://github.com/project-2-diving-book/diving-book"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <BsGithub />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               {/* description */}
-              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-48">
-                <span className="secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div className="absolute z-50 transition-all duration-700 -top-full left-2 group-hover:top-16">
+                <span className="secondary lg:text-sm xl:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit.
                 </span>
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
-              group-hover:bottom-6 rounded-full"
+                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
+                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
               >
                 <img
                   src={JavascriptIcon}
@@ -112,7 +145,7 @@ const Projects = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex flex-col flex-1 gap-y-10"
+            className="flex flex-col justify-between flex-1 gap-y-10"
           >
             {/* project2 */}
             <div className="relative overflow-hidden border-2 group border-white/50 rounded-xl">
@@ -125,19 +158,50 @@ const Projects = () => {
                 alt="project1"
               />
               {/* title */}
-              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-56">
-                <span className="text-2xl text-gradient">RootSeeker</span>
+              <div
+                className="absolute z-50 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+              group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]"
+              >
+                <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
+                  RootSeeker
+                </span>
+                <div className="flex items-center">
+                  <div className="mx-2 my-1 icon-box w-[35px] h-[35px]">
+                    <div className="icon-content">
+                      <a
+                        href="https://rootseeker.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FiExternalLink />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="mx-2 my-1 icon-box w-[35px] h-[35px]">
+                    <div className="icon-content">
+                      <a
+                        href="https://github.com/RootSeeker-fullstack-app/rootseeker-client"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <BsGithub />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               {/* description */}
-              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-48">
-                <span className="secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div className="absolute z-50 transition-all duration-700 -top-full left-2 group-hover:top-16">
+                <span className="secondary lg:text-sm xl:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit.
                 </span>
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
-              group-hover:bottom-6 rounded-full"
+                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
+                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
               >
                 <img
                   src={JavascriptIcon}
@@ -194,19 +258,48 @@ const Projects = () => {
                 alt="project1"
               />
               {/* title */}
-              <div className="absolute z-50 transition-all duration-500 -bottom-full left-12 group-hover:bottom-56">
-                <span className="text-2xl text-gradient">SpaceScape</span>
+              <div className="absolute z-50 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+              group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]">
+                <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
+                  SpaceScape
+                </span>
+                <div className="flex items-center">
+                  <div className="mx-2 my-1 icon-box w-[35px] h-[35px]">
+                    <div className="icon-content">
+                      <a
+                        href="https://fndoramos.github.io/SpaceSurvival"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <FiExternalLink />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="mx-2 my-1 icon-box w-[35px] h-[35px]">
+                    <div className="icon-content">
+                      <a
+                        href="https://github.com/fndoRamos/SpaceSurvival"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <BsGithub />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               {/* description */}
-              <div className="absolute z-50 transition-all duration-700 -bottom-full left-12 group-hover:bottom-48">
-                <span className="secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div className="absolute z-50 transition-all duration-700 -top-full left-2 group-hover:top-16">
+                <span className="secondary lg:text-sm xl:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit.
                 </span>
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-10 
-              group-hover:bottom-6 rounded-full"
+                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] max-w-[380px] -bottom-full left-2 
+                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
               >
                 <img
                   src={JavascriptIcon}
