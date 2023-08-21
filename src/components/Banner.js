@@ -11,18 +11,8 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
-// kute
-import KUTE from "kute.js";
 
 const Banner = () => {
-  // useEffect(() => {
-  //   KUTE.fromTo(
-  //     "#blob1",
-  //     { path: "#blob1" },
-  //     { path: "#blob2" },
-  //     { repeat: Infinity, duration: 6000, yoyo: true }
-  //   ).start();
-  // });
   return (
     <section
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -118,30 +108,6 @@ const Banner = () => {
                 className="h-[500px] w-[auto] blob"
               />
             </div>
-            {/* <svg
-              id="visual"
-              viewBox="0 0 900 900"
-              width="900"
-              height="900"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-            >
-              <g transform="translate(500.39323758081855 318.60239032528267)">
-                <path
-                  id="blob1"
-                  d="M347.9 -253.1C412.7 -196.1 400.8 -53.7 378.9 104.1C357 261.9 324.9 435 212.6 518.9C100.2 602.7 -92.4 597.3 -228.3 515.9C-364.2 434.4 -443.4 276.8 -478.2 112.5C-513.1 -51.8 -503.6 -222.9 -416.5 -285C-329.4 -347.1 -164.7 -300.1 -11.6 -290.9C141.5 -281.6 283 -310.1 347.9 -253.1"
-                  fill="#BB004B"
-                ></path>
-              </g>
-              <g transform="translate(467.18672497063585 438.9885256735413)" style={{visibility: "hidden"}}>
-                <path
-                  id="blob2"
-                  d="M327 -247.1C387.6 -184.7 375.6 -50.9 333.3 52.7C291 156.2 218.4 229.5 122.2 289.5C26 349.6 -93.7 396.4 -159.1 355.4C-224.6 314.3 -235.7 185.3 -288.1 41.3C-340.4 -102.7 -434.1 -261.8 -393 -319.7C-351.8 -377.6 -175.9 -334.3 -21.4 -317.2C133.2 -300.2 266.3 -309.4 327 -247.1"
-                  fill="#BB004B"
-                ></path>
-              </g>
-            </svg> */}
           </motion.div>
         </div>
       </div>
