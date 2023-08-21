@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 // image
-import profileImage from "../assets/image-avatar.jpg";
+import profileImage from "../assets/image-avatar.png";
 // icons
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
@@ -39,7 +39,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
             >
-              FERNANDO <span>RAMOS</span>
+              <span className="text-accent">F</span>ER
+              <span className="text-accent">N</span>AN
+              <span className="text-accent">DO</span>
+              <br />
+              <span className="text-accent">RAMOS</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -108,7 +112,11 @@ const Banner = () => {
             className="hidden lg:flex flex-1 justify-center max-w-[400px]"
           >
             <div className="h-[570px] w-[380px] flex justify-center items-center">
-            <img src={profileImage} alt="Fernando Ramos" className="h-[500px] w-[auto] blob" />
+              <img
+                src={profileImage}
+                alt="Fernando Ramos"
+                className="h-[500px] w-[auto] blob"
+              />
             </div>
             {/* <svg
               id="visual"

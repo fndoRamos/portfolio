@@ -9,9 +9,12 @@ import { fadeIn } from "../variants";
 const Contact = () => {
   const ref = useRef();
   const [succcess, setSuccess] = useState(null);
+  const [isSendingEmail, setIsSendingEmail] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setIsSendingEmail(true);
 
     emailjs
       .sendForm(
@@ -20,16 +23,17 @@ const Contact = () => {
         ref.current,
         "qshiveZWl15GpS-V0"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccess(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccess(false);
-        }
-      );
+      .then((result) => {
+        console.log(result.text);
+        setSuccess(true);
+      })
+      .catch((error) => {
+        console.log(error.text);
+        setSuccess(false);
+      })
+      .finally(() => {
+        setIsSendingEmail(false);
+      });
   };
 
   return (
@@ -65,26 +69,48 @@ const Contact = () => {
             onSubmit={handleSubmit}
           >
             <input
-              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-accent"
+              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-[#FF9950]"
               type="text"
               name="name"
               placeholder="Your name"
             />
             <input
-              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-accent"
+              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-[#FF9950]"
               type="email"
               name="email"
               placeholder="Your email"
             />
             <textarea
-              className="w-full py-12 mb-12 transition-all bg-transparent border-b outline-none resize-none placeholder:text-white focus:border-accent"
+              className="w-full py-12 mb-12 transition-all bg-transparent border-b outline-none resize-none placeholder:text-white focus:border-[#FF9950]"
               name="message"
               placeholder="Your message"
             ></textarea>
-            <button type="submit" className="btn btn-lg">
-              Send message
-            </button>
-            {succcess && "Your message has been sent, I will get back to you soon!"}
+            {isSendingEmail ? (
+              <button type="submit" className="flex items-center justify-center btn btn-lg" disabled>
+                <svg
+                  className="w-5 h-5 mr-3 animate-spin"
+                  fill="#FFFFFF"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="20" r="2" />
+                  <circle cx="12" cy="4" r="2" />
+                  <circle cx="6.343" cy="17.657" r="2" />
+                  <circle cx="17.657" cy="6.343" r="2" />
+                  <circle cx="4" cy="12" r="2.001" />
+                  <circle cx="20" cy="12" r="2" />
+                  <circle cx="6.343" cy="6.344" r="2" />
+                  <circle cx="17.657" cy="17.658" r="2" />
+                </svg>
+                Sending email...
+              </button>
+            ) : (
+              <button type="submit" className="btn btn-lg">
+                Send message
+              </button>
+            )}
+            {succcess &&
+              "Your message has been sent, I will get back to you soon!"}
           </motion.form>
         </div>
       </div>

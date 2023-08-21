@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    <div className='overflow-hidden bg-no-repeat bg-cover bg-site'>
+    <div className='overflow-hidden bg-no-repeat bg-cover bg-gradient-to-br from-bg1 via-bg2 to-bg3'>
       <Header />
       <Banner />
       <Nav />

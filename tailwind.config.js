@@ -19,8 +19,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
-        accent: '#B809C3',
+        primary: '#D5DDDF',
+        accent: '#B2C5B2',
+        bg1: '#1B2727',
+        bg2: '#3C5148',
+        bg3: '#6B8E4E',
       },
       backgroundImage: {
         site: "url('./assets/site-bg.png')",
