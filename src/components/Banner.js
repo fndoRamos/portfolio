@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 // image
 import profileImage from "../assets/image-avatar.png";
@@ -68,7 +68,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              className="flex items-center text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <div className="icon-box w-[35px] h-[35px]">
                 <div className="icon-content">
@@ -92,6 +92,14 @@ const Banner = () => {
                   </a>
                 </div>
               </div>
+              <Link
+                to="contact"
+                smooth={true}
+                spy={true}
+                className="flex items-center justify-center cursor-pointer btn btn-sm"
+              >
+                Contact me
+              </Link>
             </motion.div>
           </div>
           {/* image */}

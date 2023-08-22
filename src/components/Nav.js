@@ -1,6 +1,6 @@
 import React from "react";
 //import icons
-import { BiHomeAlt, BiUser } from "react-icons/bi";
+import { BiHomeAlt } from "react-icons/bi";
 import { BsClipboardData, BsBriefcase, BsChatSquareText } from "react-icons/bs";
 //Link
 import { Link } from "react-scroll";
@@ -18,8 +18,8 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            offset={-200}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            hover:bg-[#b2c5b2b9] hover:text-white rounded-full transition-all"
             title="Home"
           >
             <BiHomeAlt />
@@ -29,7 +29,8 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            hover:bg-[#b2c5b2b9] rounded-full transition-all hover:text-white"
             title="About"
           >
             {/* <BiUser />
@@ -48,7 +49,8 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            hover:bg-[#b2c5b2b9] rounded-full transition-all hover:text-white"
             title="Projects"
           >
             <BsClipboardData />
@@ -58,7 +60,8 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            hover:bg-[#b2c5b2b9] rounded-full transition-all hover:text-white"
             title="Contact"
           >
             <BsChatSquareText />

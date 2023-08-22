@@ -38,11 +38,11 @@ const Contact = () => {
         "qshiveZWl15GpS-V0"
       )
       .then((result) => {
-        console.log(result.text);
+        // console.log(result.text);
         notify("a");
       })
       .catch((error) => {
-        console.log(error.text);
+        // console.log(error.text);
         notify("b");
       })
       .finally(() => {
@@ -105,7 +105,7 @@ const Contact = () => {
             {isSendingEmail ? (
               <button
                 type="submit"
-                className="flex items-center justify-center btn btn-lg bg-[#B2C5B2] hover:bg-[#B2C5B2]"
+                className="flex items-center justify-center btn btn-lg bg-[#B2C5B2] hover:bg-[#B2C5B2] disabled:pointer-events-none"
                 disabled
               >
                 <img src={loader} alt="loader" className="w-10 h-10 mr-3" />

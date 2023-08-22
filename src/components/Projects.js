@@ -57,7 +57,7 @@ const Projects = () => {
               />
               {/* title */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+                className="absolute z-40 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
               group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]"
               >
                 <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
@@ -89,7 +89,7 @@ const Projects = () => {
                 </div>
               </div>
               {/* description */}
-              <div className="absolute z-50 transition-all duration-700 -top-full left-2 group-hover:top-16">
+              <div className="absolute z-40 transition-all duration-700 -top-full left-2 group-hover:top-16">
                 <span className="secondary lg:text-sm xl:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
@@ -98,7 +98,7 @@ const Projects = () => {
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
+                className="absolute z-40 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
                 group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
               >
                 <img
@@ -159,7 +159,7 @@ const Projects = () => {
               />
               {/* title */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+                className="absolute z-40 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
               group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]"
               >
                 <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
@@ -191,7 +191,7 @@ const Projects = () => {
                 </div>
               </div>
               {/* description */}
-              <div className="absolute z-50 transition-all duration-700 -top-full left-2 group-hover:top-16">
+              <div className="absolute z-40 transition-all duration-700 -top-full left-2 group-hover:top-16">
                 <span className="secondary lg:text-sm xl:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
@@ -200,7 +200,7 @@ const Projects = () => {
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
+                className="absolute z-40 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
                 group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
               >
                 <img
@@ -258,7 +258,7 @@ const Projects = () => {
                 alt="project1"
               />
               {/* title */}
-              <div className="absolute z-50 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+              <div className="absolute z-40 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
               group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]">
                 <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
                   SpaceScape
@@ -289,7 +289,7 @@ const Projects = () => {
                 </div>
               </div>
               {/* description */}
-              <div className="absolute z-50 transition-all duration-700 -top-full left-2 group-hover:top-16">
+              <div className="absolute z-40 transition-all duration-700 -top-full left-2 group-hover:top-16">
                 <span className="secondary lg:text-sm xl:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
@@ -298,7 +298,7 @@ const Projects = () => {
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-50 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] max-w-[380px] -bottom-full left-2 
+                className="absolute z-40 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] max-w-[380px] -bottom-full left-2 
                 group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
               >
                 <img
