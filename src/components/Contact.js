@@ -10,7 +10,6 @@ import loader from "../assets/loader.svg";
 // toast
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaDivide } from "react-icons/fa";
 
 const Contact = () => {
   const ref = useRef();
@@ -106,7 +105,7 @@ const Contact = () => {
             {isSendingEmail ? (
               <button
                 type="submit"
-                className="flex items-center justify-center btn btn-lg"
+                className="flex items-center justify-center btn btn-lg bg-[#B2C5B2] hover:bg-[#B2C5B2]"
                 disabled
               >
                 <img src={loader} alt="loader" className="w-10 h-10 mr-3" />
@@ -117,14 +116,14 @@ const Contact = () => {
                 Send message
               </button>
             )}
-            <ToastContainer
-              position="top-center"
-              closeButton={true}
-              autoClose={10000}
-            />
           </motion.form>
         </div>
       </div>
+      <ToastContainer
+        position="top-center"
+        closeButton={true}
+        autoClose={6000}
+      />
     </section>
   );
 };

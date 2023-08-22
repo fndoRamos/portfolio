@@ -14,11 +14,11 @@
 }
 
 .btn:hover {
-  border: 1px solid #FF9950;
+  border: 1px solid black;
   outline-color: #1b272700;
   outline-offset: 15px;
-  color: #FF9950;
-  background-color: #ff995020;
+  color: black;
+  background-color: #b2c5b2c8;
 }
 
 .gradient,
