@@ -11,11 +11,13 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
+// cv
+import cv from "../assets/cv.pdf"
 
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center pt-11"
       id="home"
     >
       <div className="container mx-auto">
@@ -100,6 +102,15 @@ const Banner = () => {
               >
                 Contact me
               </Link>
+              <a
+                href={cv}
+                download="Fernando Ramos resume"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex items-center justify-center cursor-pointer btn btn-sm"
+              >
+                Download CV
+              </a>
             </motion.div>
           </div>
           {/* image */}

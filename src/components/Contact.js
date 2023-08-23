@@ -79,25 +79,25 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex flex-col items-start flex-1 p-6 pb-24 border rounded-2xl gap-y-6"
+            className="flex flex-col items-start flex-1 p-6 pb-24 border rounded-2xl gap-y-6 bg-[#b2c5b21a]"
             onSubmit={handleSubmit}
           >
             <input
-              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-[#FF9950]"
+              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-[#1B2727]"
               type="text"
               name="name"
               required={true}
               placeholder="Your name"
             />
             <input
-              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-[#FF9950]"
+              className="w-full py-3 transition-all bg-transparent border-b outline-none placeholder:text-white focus:border-[#1B2727]"
               type="email"
               name="email"
               required={true}
               placeholder="Your email"
             />
             <textarea
-              className="w-full py-12 mb-12 transition-all bg-transparent border-b outline-none resize-none placeholder:text-white focus:border-[#FF9950]"
+              className="w-full py-12 mb-12 transition-all bg-transparent border-b outline-none resize-none placeholder:text-white focus:border-[#1B2727]"
               name="message"
               placeholder="Your message"
               required={true}
