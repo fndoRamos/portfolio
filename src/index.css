@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  background-color: #1b27274e;
+  box-shadow: 0 0 20px #1B2727;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 50;
+  pointer-events: none;
+}
+
 .btn {
   border: 1px solid;
   outline: 1px solid;
