@@ -42,15 +42,16 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="mb-4 h3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              ab dolor cupiditate asperiores ipsam.
+              My journey began with a curiosity to understand how digital
+              experiences come to life. As I delved into coding, I discovered my
+              inclination towards problem solving. I approach each coding
+              challenge as a puzzle, breaking down intricate problems into
+              manageable pieces.
             </h3>
             <p className="mb-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus a illum facilis, maxime ipsum commodi laborum
-              exercitationem animi neque sapiente pariatur aliquam
-              necessitatibus! Consequuntur odio magnam voluptas a accusamus.
-              Cum.
+              Beyond the lines of code, I'm an enthusiastic communicator and a
+              team player. I understand that successful projects are a result of
+              effective collaboration and open dialogue.
             </p>
           </motion.div>
         </div>

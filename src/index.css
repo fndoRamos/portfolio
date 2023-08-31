@@ -6,11 +6,10 @@
 .cursor-outline {
   width: 30px;
   height: 30px;
-  background-color: #1b27274e;
-  box-shadow: 0 0 20px #1B2727;
   position: fixed;
   top: 0;
   left: 0;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 50;
@@ -122,64 +121,16 @@
     border-radius: 40% 60% 70% 40% / 50% 60% 30% 60%
   }
 }
-/* .avatar-content a {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: 0.5s;
-  pointer-events: none;
-  z-index: 3;
-} */
-
-/* .avatar-box:hover .avatar-content img {
-  opacity: 0;
-}
-
-.avatar-content h2 {
-  position: relative;
-  font-size: 1.5em;
-  text-align: center;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-.avatar-content h2 span {
-  font-weight: 300;
-  font-size: 0.75em;
-} */
-
-/* .avatar-content a {
-  position: relative;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #fff;
-  color: #070a1c;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  transition: 0.5s;
-} */
-
-/* .avatar-content Link:hover {
-  letter-spacing: 0.2em
-} */
 
 @layer base {
   body {
-    @apply text-lg leading-8 text-white font-secondary;
+    @apply text-lg leading-8 text-primary font-secondary;
   }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-tertiary text-[18px] mb-6 leading-[32px];
   }
   .btn {
     @apply font-medium text-white rounded-full font-primary;
@@ -194,7 +145,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply font-bold text-transparent bg-gradient-to-br bg-clip-text from-bg3 via-bg2 to-bg1 font-primary hover:from-bg1 hover:via-bg2 hover:to-bg3;
+    @apply font-bold text-transparent bg-gradient-to-br bg-clip-text from-[#b5f77e] to-[#B2C5B2] font-primary hover:from-[#B2C5B2] hover:to-[#6B8E4E];
   }
   .section {
     @apply flex items-center py-8 lg:py-24 lg:h-screen;

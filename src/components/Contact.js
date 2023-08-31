@@ -10,6 +10,9 @@ import loader from "../assets/loader.svg";
 // toast
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// icons
+import { FaLinkedin } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 
 const Contact = () => {
   const ref = useRef();
@@ -60,17 +63,43 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex items-center justify-start flex-1"
+            className="flex flex-col items-start justify-center flex-1"
           >
             <div>
-              <h4 className="mb-2 text-xl font-medium tracking-wide uppercase text-accent">
-                Get in touch
-              </h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br />
-                together!
+              <h2 className="h2 text-accent">Get in touch.</h2>
+              <h2 className="text-[20px] lg:text-[25px] leading-[46px]">
+                Feel free to reach out at <br />
+                <span className="font-semibold">fndo.ramos@outlook.com</span>, <br />
+                whether it's to discuss a project, <br />
+                share ideas, or just geek out about <br />
+                the latest in the tech world. Looking <br />
+                forward to connecting with you!
               </h2>
             </div>
+            <div className="flex my-4 gap-x-4">
+                <div className="icon-box w-[35px] h-[35px]">
+                  <div className="icon-content">
+                    <a
+                      href="https://linkedin.com/in/fernando-ramos-webdev"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </div>
+                </div>
+                <div className="icon-box w-[35px] h-[35px]">
+                  <div className="icon-content">
+                    <a
+                      href="https://github.com/fndoRamos"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <BsGithub />
+                    </a>
+                  </div>
+                </div>
+              </div>
           </motion.div>
           {/* form */}
           <motion.form

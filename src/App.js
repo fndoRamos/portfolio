@@ -14,7 +14,7 @@ const App = () => {
       const posX = e.clientX;
       const posY = e.clientY;
 
-      cursorOutline.style.display = 'block'
+     cursorOutline.style.display = 'block'
 
       cursorOutline.animate(
         {

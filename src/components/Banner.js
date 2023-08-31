@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
 // cv
-import cv from "../assets/cv.pdf"
+import cv from "../assets/cv.pdf";
 
 const Banner = () => {
   return (
@@ -31,11 +31,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
             >
-              <span className="text-accent">F</span>ER
-              <span className="text-accent">N</span>AN
-              <span className="text-accent">DO</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#b5f77e] to-[#B2C5B2]">FERNANDO <br />
+              RAMOS</span>
+              {/* F<span className="text-[#1b211b]">ER</span>
+              N<span className="text-[#1b211b]">AN</span>DO
               <br />
-              <span className="text-accent">RAMOS</span>
+              RAMOS */}
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -44,11 +45,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="mr-4 text-white">I am a</span>
+              {/* <span className="mr-4 text-white">I am a</span> */}
               <TypeAnimation
-                sequence={["Full-Stack", 2000, "Developer", 2000]}
+                sequence={["Full-Stack", 2000, "Web Developer", 2000]}
                 speed={50}
-                className="text-accent"
+                className="text-transparent bg-clip-text bg-gradient-to-br from-[#b5f77e] to-[#B2C5B2]"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -60,45 +61,47 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="max-w-lg mx-auto mb-8 lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              ullam molestiae ea provident modi ex perspiciatis facere
-              doloremque dolor quidem quae alias, nihil hic, dolore, voluptates
-              nemo saepe suscipit ducimus!
+              Hello and welcome! I'm thrilled to share
+              with you my journey in the tech world. My name is
+              Fernando Ramos, a full stack web developer. Passionate about crafting digital
+              experiences that seamlessly blend creativity and functionality.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex items-center text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              className="flex flex-col lg:flex-row items-center text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <div className="icon-box w-[35px] h-[35px]">
-                <div className="icon-content">
-                  <a
-                    href="https://linkedin.com/in/fernando-ramos-webdev"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <FaLinkedin />
-                  </a>
+              <div className="flex my-4 gap-x-4">
+                <div className="icon-box w-[35px] h-[35px]">
+                  <div className="icon-content">
+                    <a
+                      href="https://linkedin.com/in/fernando-ramos-webdev"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="icon-box w-[35px] h-[35px]">
-                <div className="icon-content">
-                  <a
-                    href="https://github.com/fndoRamos"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <BsGithub />
-                  </a>
+                <div className="icon-box w-[35px] h-[35px]">
+                  <div className="icon-content">
+                    <a
+                      href="https://github.com/fndoRamos"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <BsGithub />
+                    </a>
+                  </div>
                 </div>
               </div>
               <Link
                 to="contact"
                 smooth={true}
                 spy={true}
-                className="flex items-center justify-center cursor-pointer btn btn-sm"
+                className="flex items-center justify-center mb-4 cursor-pointer lg:mb-0 btn btn-sm"
               >
                 Contact me
               </Link>

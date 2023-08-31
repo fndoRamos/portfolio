@@ -32,23 +32,22 @@ const Projects = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex flex-col flex-1 mb-10 gap-y-12 lg:mb-0"
+            className="flex flex-col justify-between flex-1 mb-10 gap-y-12 lg:mb-0"
           >
             {/* text */}
             <div>
-              <h2 className="leading-tight h2 text-accent">
-                My Latest <br />
-                Work.
-              </h2>
+              <h2 className="leading-tight h2 text-accent">Projects.</h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut est
-                error a veritatis fugiat ipsa dicta et vel deserunt.
+                The following projects serve as demonstrations of my skills and
+                experience. Accompanying each project is a short description,
+                along with direct links to code repositories and live
+                demonstrations.
               </p>
             </div>
             {/* project1 */}
             <div className="relative overflow-hidden border-2 group border-white/50 rounded-xl">
               {/* overlay */}
-              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/70"></div>
+              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/80"></div>
               {/* img */}
               <img
                 className="transition-all duration-500 group-hover:scale-125"
@@ -89,8 +88,8 @@ const Projects = () => {
                 </div>
               </div>
               {/* description */}
-              <div className="absolute z-40 transition-all duration-700 -top-full left-2 group-hover:top-16">
-                <span className="secondary lg:text-sm xl:text-lg">
+              <div className="absolute z-40 hidden transition-all duration-700 -top-full left-2 group-hover:top-16 xs:block">
+                <span className="secondary lg:text-sm xl:text-lg text-[#d0d8d0] font-semibold">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
                   dolor sit amet consectetur adipisicing elit.
@@ -98,8 +97,8 @@ const Projects = () => {
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-40 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
-                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
+                className="absolute z-40 xs:flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
+                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full hidden"
               >
                 <img
                   src={JavascriptIcon}
@@ -150,7 +149,7 @@ const Projects = () => {
             {/* project2 */}
             <div className="relative overflow-hidden border-2 group border-white/50 rounded-xl">
               {/* overlay */}
-              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/70"></div>
+              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/80"></div>
               {/* img */}
               <img
                 className="transition-all duration-500 group-hover:scale-125"
@@ -191,8 +190,8 @@ const Projects = () => {
                 </div>
               </div>
               {/* description */}
-              <div className="absolute z-40 transition-all duration-700 -top-full left-2 group-hover:top-16">
-                <span className="secondary lg:text-sm xl:text-lg">
+              <div className="absolute z-40 hidden transition-all duration-700 -top-full left-2 group-hover:top-16 xs:block">
+                <span className="secondary lg:text-sm xl:text-lg text-[#d0d8d0] font-semibold">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
                   dolor sit amet consectetur adipisicing elit.
@@ -200,8 +199,8 @@ const Projects = () => {
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-40 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
-                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
+                className="absolute z-40 xs:flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] -bottom-full left-2 
+                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full hidden"
               >
                 <img
                   src={JavascriptIcon}
@@ -250,7 +249,7 @@ const Projects = () => {
             {/* project3 */}
             <div className="relative overflow-hidden border-2 group border-white/50 rounded-xl">
               {/* overlay */}
-              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/70"></div>
+              <div className="absolute z-40 w-full h-full transition-all duration-300 group-hover:bg-black/80"></div>
               {/* img */}
               <img
                 className="transition-all duration-500 group-hover:scale-125"
@@ -258,8 +257,10 @@ const Projects = () => {
                 alt="project1"
               />
               {/* title */}
-              <div className="absolute z-40 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
-              group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]">
+              <div
+                className="absolute z-40 flex justify-between items-center transition-all duration-500 w-[180px] -top-full left-2 
+              group-hover:top-6 md:w-[720px] lg:w-[430px] xl:w-[550px]"
+              >
                 <span className="mr-4 text-xl md:text-3xl lg:text-2xl xl:text-3xl text-gradient">
                   SpaceScape
                 </span>
@@ -289,8 +290,8 @@ const Projects = () => {
                 </div>
               </div>
               {/* description */}
-              <div className="absolute z-40 transition-all duration-700 -top-full left-2 group-hover:top-16">
-                <span className="secondary lg:text-sm xl:text-lg">
+              <div className="absolute z-40 hidden transition-all duration-700 -top-full left-2 group-hover:top-16 xs:block">
+                <span className="secondary lg:text-sm xl:text-lg text-[#d0d8d0] font-semibold">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
                   dolor sit amet consectetur adipisicing elit.
@@ -298,8 +299,8 @@ const Projects = () => {
               </div>
               {/* tech stack */}
               <div
-                className="absolute z-40 flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] max-w-[380px] -bottom-full left-2 
-                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full"
+                className="absolute z-40 xs:flex justify-between items-center transition-all duration-1000 bg-black/50 h-[40px] max-w-[380px] -bottom-full left-2 
+                group-hover:bottom-6 lg:group-hover:bottom-2 xl:group-hover:bottom-6 rounded-full hidden"
               >
                 <img
                   src={JavascriptIcon}
