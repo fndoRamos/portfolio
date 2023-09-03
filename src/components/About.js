@@ -30,7 +30,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 bg-contain bg-about bg-no-repeat h-[450px] mix-blend-lighten bg-top"
+            className="hidden lg:flex flex-1 bg-contain bg-about bg-no-repeat h-[450px] mix-blend-lighten bg-top"
           ></motion.div>
           {/* text */}
           <motion.div
@@ -40,7 +40,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About me.</h2>
+            <h2 className="h2">About me.</h2>
             <h3 className="mb-4 h3">
               My journey began with a curiosity to understand how digital
               experiences come to life. As I delved into coding, I discovered my
@@ -61,7 +61,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="my-8 h2 text-accent"
+            className="my-8 h2"
           >
             Tech stack.
           </motion.h2>

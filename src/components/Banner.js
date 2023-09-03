@@ -31,12 +31,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#b5f77e] to-[#B2C5B2]">FERNANDO <br />
-              RAMOS</span>
-              {/* F<span className="text-[#1b211b]">ER</span>
-              N<span className="text-[#1b211b]">AN</span>DO
+              FERNANDO
               <br />
-              RAMOS */}
+              RAMOS
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -45,7 +42,6 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              {/* <span className="mr-4 text-white">I am a</span> */}
               <TypeAnimation
                 sequence={["Full-Stack", 2000, "Web Developer", 2000]}
                 speed={50}

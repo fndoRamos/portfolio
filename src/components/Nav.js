@@ -18,18 +18,19 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            className="cursor-pointer w-[64px] h-[64px] flex flex-col items-center justify-center 
             hover:bg-[#b2c5b2b9] hover:text-white rounded-full transition-all"
             title="Home"
           >
             <BiHomeAlt />
+            <div className="text-[10px] font-tertiary">HOME</div>
           </Link>
           <Link
             to="about"
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            className="cursor-pointer w-[64px] h-[64px] flex flex-col items-center justify-center 
             hover:bg-[#b2c5b2b9] rounded-full transition-all hover:text-white"
             title="About"
           >
@@ -43,28 +44,31 @@ const Nav = () => {
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           > */}
             <BsBriefcase />
+            <div className="text-[10px] font-tertiary">ABOUT</div>
           </Link>
           <Link
             to="projects"
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            className="cursor-pointer w-[64px] h-[64px] flex flex-col items-center justify-center 
             hover:bg-[#b2c5b2b9] rounded-full transition-all hover:text-white"
             title="Projects"
           >
             <BsClipboardData />
+            <div className="text-[10px] font-tertiary">PROJECTS</div>
           </Link>
           <Link
             to="contact"
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center 
+            className="cursor-pointer w-[64px] h-[64px] flex flex-col items-center justify-center 
             hover:bg-[#b2c5b2b9] rounded-full transition-all hover:text-white"
             title="Contact"
           >
             <BsChatSquareText />
+            <div className="text-[10px] font-tertiary">CONTACT</div>
           </Link>
         </div>
       </div>

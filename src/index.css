@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.cursor-outline {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 2px solid hsla(0, 0%, 100%, 0.5);
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 50;
-  pointer-events: none;
-}
-
 .btn {
   border: 1px solid;
   outline: 1px solid;
@@ -127,7 +113,7 @@
     @apply text-lg leading-8 text-primary font-secondary;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#b5f77e] to-[#B2C5B2] text-[32px] lg:text-[46px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
     @apply font-tertiary text-[18px] mb-6 leading-[32px];
@@ -145,7 +131,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply font-bold text-transparent bg-gradient-to-br bg-clip-text from-[#b5f77e] to-[#B2C5B2] font-primary hover:from-[#B2C5B2] hover:to-[#6B8E4E];
+    @apply font-bold text-transparent bg-gradient-to-br bg-clip-text from-[#a5bb82] to-[#B2C5B2] font-primary;
   }
   .section {
     @apply flex items-center py-8 lg:py-24 lg:h-screen;

@@ -66,7 +66,7 @@ const Contact = () => {
             className="flex flex-col items-start justify-center flex-1"
           >
             <div>
-              <h2 className="h2 text-accent">Get in touch.</h2>
+              <h2 className="h2">Get in touch.</h2>
               <h2 className="text-[20px] lg:text-[25px] leading-[46px]">
                 Feel free to reach out at <br />
                 <span className="font-semibold">fndo.ramos@outlook.com</span>, <br />

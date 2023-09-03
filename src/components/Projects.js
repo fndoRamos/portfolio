@@ -36,8 +36,8 @@ const Projects = () => {
           >
             {/* text */}
             <div>
-              <h2 className="leading-tight h2 text-accent">Projects.</h2>
-              <p className="max-w-sm mb-16">
+              <h2 className="leading-tight h2">Projects.</h2>
+              <p className="max-w-sm mb-16 text-xl">
                 The following projects serve as demonstrations of my skills and
                 experience. Accompanying each project is a short description,
                 along with direct links to code repositories and live
@@ -90,9 +90,10 @@ const Projects = () => {
               {/* description */}
               <div className="absolute z-40 hidden transition-all duration-700 -top-full left-2 group-hover:top-16 xs:block">
                 <span className="secondary lg:text-sm xl:text-lg text-[#d0d8d0] font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit.
+                  Social-media platform dedicated to divers and sea lovers where
+                  they can log and share their experiences. This is a full stack
+                  project including full CRUD, login, map functionalities and
+                  much more!
                 </span>
               </div>
               {/* tech stack */}
@@ -192,9 +193,10 @@ const Projects = () => {
               {/* description */}
               <div className="absolute z-40 hidden transition-all duration-700 -top-full left-2 group-hover:top-16 xs:block">
                 <span className="secondary lg:text-sm xl:text-lg text-[#d0d8d0] font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit.
+                  Website for outdoor-activities where users
+                  can search and book services or become hosts and offer them.
+                  Full stack web application using MERN technologies. It is responsive
+                  and supports CRUD operations.
                 </span>
               </div>
               {/* tech stack */}
@@ -292,9 +294,9 @@ const Projects = () => {
               {/* description */}
               <div className="absolute z-40 hidden transition-all duration-700 -top-full left-2 group-hover:top-16 xs:block">
                 <span className="secondary lg:text-sm xl:text-lg text-[#d0d8d0] font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit.
+                  Single player browser game where the goal is to avoid
+                  obstacles for as long as you can to get the highest score. The
+                  project uses DOM manipulation and Object Oriented Programming.
                 </span>
               </div>
               {/* tech stack */}
